@@ -10,7 +10,7 @@ exports.up = function (knex) {
     //model
     tbl.string('model', 128).notNullable()
     //mileage
-    tbl.numeric('mileage').unsigned().notNullable()
+    tbl.integer('mileage').unsigned().notNullable()
     //title
     tbl.string('title', 128)
     //transmission
